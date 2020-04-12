@@ -14,6 +14,8 @@ var Conf *viper.Viper
 
 var once sync.Once // 单例工具。
 
+const projectName = "leavemsg"
+
 func init() {
 	InitConfig(GetPath() + "/conf")
 	WatchConfig()
@@ -33,7 +35,7 @@ func GetPath() string {
 	//获取当前文件的路径 /Users/lgh/Documents/leavemsg/config/config.go
 	_, filename, _, _ := runtime.Caller(0)
 	//获取项目目录 /Users/lgh/Documents/conf-demo
-	filename = strings.Split(filename, "conf-demo")[0] + "conf-demo"
+	filename = strings.Split(filename, projectName)[0] + projectName
 	return filename
 }
 
