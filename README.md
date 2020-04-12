@@ -24,7 +24,7 @@ go test ./...
 ```
 ./build.sh
 ```
-然后进入`target/config-demo/bin/下，执行二进制文件。
+然后进入`target/config-demo/bin/`下，执行二进制文件。
 ```
 cd target/config-demo/bin/
 linux执行
